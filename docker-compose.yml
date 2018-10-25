@@ -17,8 +17,6 @@ services:
       - "8080:80"
     volumes:
       - ./components/frontend:/code
-      - /etc/passwd:/etc/passwd:ro
-      - /etc/group:/etc/group:ro
     environment:
       - SYMFONY_PHPUNIT_VERSION=7.1
 
@@ -28,8 +26,6 @@ services:
       - "8081:80"
     volumes:
       - ./components/recipe:/code
-      - /etc/passwd:/etc/passwd:ro
-      - /etc/group:/etc/group:ro
     environment:
       - SYMFONY_PHPUNIT_VERSION=7.1
 
@@ -39,8 +35,6 @@ services:
       - "8082:80"
     volumes:
       - ./components/user:/code
-      - /etc/passwd:/etc/passwd:ro
-      - /etc/group:/etc/group:ro
     environment:
       - SYMFONY_PHPUNIT_VERSION=7.1
 
@@ -50,8 +44,6 @@ services:
       - "8083:80"
     volumes:
       - ./components/recipe-search:/code
-      - /etc/passwd:/etc/passwd:ro
-      - /etc/group:/etc/group:ro
     environment:
       - SYMFONY_PHPUNIT_VERSION=7.1
 
@@ -61,7 +53,5 @@ services:
       - "8084:80"
     volumes:
       - ./components/recipe-detail:/code
-      - /etc/passwd:/etc/passwd:ro
-      - /etc/group:/etc/group:ro
     environment:
       - SYMFONY_PHPUNIT_VERSION=7.1
