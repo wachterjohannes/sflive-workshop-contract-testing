@@ -1,3 +1,6 @@
 *.log
 .composer
 .vagrant
+
+.idea
+*.iml
