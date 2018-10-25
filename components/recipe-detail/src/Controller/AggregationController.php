@@ -13,7 +13,7 @@ class AggregationController extends AbstractController
     public function recipe(RecipeGateway $recipeGateway, UserGateway $userGateway, $id)
     {
         $recipe = $recipeGateway->findById($id);
-        $user = $userGateway->findById($id);
+        $user = $userGateway->findById($recipe->getAuthorId());
 
         if (!$recipe) {
             throw new NotFoundHttpException("recipe ${id} not found");

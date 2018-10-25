@@ -18,8 +18,6 @@ class RecipeProviderTest extends TestCase
      */
     public function testProviderDoesNotBreakThings()
     {
-        $this->markTestSkipped('This test needs to be enabled.');
-
         $config = new VerifierConfig();
         $config
             ->setProviderName('recipe') // Providers name to fetch.

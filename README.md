@@ -99,3 +99,8 @@ Provider Test:
 
 
     http://192.168.33.10:8888
+
+### Can-I-Deploy
+
+with tool:     https://github.com/pact-foundation/pact_broker-client#can-i-deploy
+with webhooks: https://github.com/pact-foundation/pact_broker/wiki/Webhooks#example-cicd-and-webhook-configuration

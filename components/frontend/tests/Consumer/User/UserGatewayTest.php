@@ -42,8 +42,8 @@ class UserGatewayTest extends TestCase
                     'id' => $matcher->integer(),
                     'name' => $matcher->like('Chefkoch'),
                     'about' => $matcher->like('text'),
-                    'registered' => $matcher->integer(),
-                    //'registeredAt' => $matcher->term('2017-12-24 20:00:00', $dateTimeTerm),
+                    //'registered' => $matcher->integer(),
+                    'registeredAt' => $matcher->term('2017-12-24 20:00:00', $dateTimeTerm),
                 ]
             );
 
